@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Phone Specification</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div style="text-align: center;">
+      <!-- <h1>Mobile Phone Specification</h1>
+      <label for="companyInput">Company Name:</label>
+      <input type="text" id="companyInput">
+      <br>
+      <label for="modelInput">Model Number:</label>
+      <input type="text" id="modelInput">
+      <br>
+      <button onclick="checkSpecification()">Check Specification</button>
+     -->
+      <div class="popup" id="popup">
+        <img src="" alt="Phone Image" id="popupImage">
+        <p id="popupContent"></p>
+        <button class="close-button "onclick="closePopup()">Close</button>
+      </div>
+    </div>
+    <div class="bg-blue-200 min-h-screen flex items-center">
+        <div class="w-full">
+          <h2 class="text-center text-blue-400 font-bold text-2xl uppercase mb-10">Find your favotite phone with Specification</h2>
+          <div class="bg-white p-10 rounded-lg shadow md:w-3/4 mx-auto lg:w-1/2">
+            
+              <div class="mb-5">
+                <label for="companyInput" class="block mb-2 font-bold text-gray-600">Company Name</label>
+                <input type="text" id="companyInput" required placeholder="Enter Company Name" class="text-black border border-gray-300 shadow p-3 w-full rounded mb-">
+              </div>
+     
+              <div class="mb-5">
+                <label for="modelInput" class="block mb-2 font-bold text-gray-600">Model Number</label>
+                <input  type="text" id="modelInput" required placeholder="Enter Model Number." class="text-black border border-red-300 shadow p-3 w-full rounded mb-">
+                <p class="text-sm text-red-400 mt-2">Model Number is required</p>
+              </div>
+     
+              <button class="block w-full bg-blue-500 text-white font-bold p-4 rounded-lg" onclick="checkSpecification()">Check Specification</button>
+           
+          </div>
+        </div>
+      </div>
+     
+      
+     
+      
+        </form>
+      </div>
+      
+</body>
+</html>
